@@ -4,3 +4,6 @@ def sub(x,y):
     return x - y
 def power(x,y):
     return x ** y
+
+
+print(add(1,2))
