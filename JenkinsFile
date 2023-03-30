@@ -13,17 +13,17 @@ pipeline {
         stage('build') {
             steps {
                 git branch: 'main', url: 'https://github.com/inventor321/Jenkins.git'
-                sh 'py funcs.py'
+                sh 'python3 funcs.py'
             }
         }
         stage('Test') {
             steps {
-                sh 'py tests.py'
+                sh 'python3 tests.py'
             }
         }
         stage('Deliver') {
             steps {
-                sh 'py funcs.py'
+                sh 'python3 funcs.py'
             }
         }
     }
